@@ -4,6 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_gridify import FlaskGridify
 from flask_table import Table, Col
 import sqlite3
+from app import app as application
 
 # Get some objects
 # class Item(object):
