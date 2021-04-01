@@ -1,2 +1,1 @@
-web: gunicorn flsakr:app --timeout 100
-
+web: gunicorn run:flaskr
