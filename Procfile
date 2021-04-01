@@ -1,1 +1,1 @@
-web gunicorn flaskr:git
+web gunicorn flaskr:flaskr
