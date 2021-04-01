@@ -25,6 +25,6 @@ def git():
 
     page = request.args.get('page', 1, type=int)
     user = users.query.paginate(page=page, per_page=25)
-     
+    print(user)
 
     return render_template("table.html", headings=headings, data = user.items) 
