@@ -23,7 +23,7 @@ def create_tables():
 def git():       
     
     headings = ['id','login','avatar', 'type', 'profile']
-    num1 = random.randint(1, 6)
+    num1 = random.randint(1, 5)
     page = request.args.get('page', num1, type=int)
     user = users.query.paginate(page=page, per_page=25)
     
