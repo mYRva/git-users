@@ -11,7 +11,7 @@ con = sqlite3.connect('example.db')
 class Seed:
 
     def get_git_users(self, total):
-        g = Github("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")
+        g = Github("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")
         arr_git_users = []
         
         iterator = 0
