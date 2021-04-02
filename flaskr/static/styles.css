@@ -1,11 +1,12 @@
 .table{
     border-spacing: 0;
     margin: 1rem; 
+    background-color:gray;
 }
 
  
 .table__row:nth-child(even){
-    background-color:gray;
+     
 
 }
 
