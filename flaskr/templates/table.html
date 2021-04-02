@@ -20,7 +20,7 @@
                     <td class="table__cell">{{ user.login }}</td>
                     <td class="table__cell">{{ user.avatar_url }}</td>
                     <td class="table__cell">{{ user.tipo }}</td>
-                    <td class="table__cell"><a href="url">{{ user.profile_url }}</a></td>
+                    <td class="table__cell"><a href="{{ user.profile_url }}">Profile </a></td>
                 </tr>
                 {% endfor %}
             </tr>            
