@@ -5,13 +5,18 @@ from pprint import pprint
 import requests
 import sqlite3
 from sqlite3 import Error
- 
+
 con = sqlite3.connect('example.db')
 
 class Seed:
 
     def get_git_users(self, total):
-        g = Github("975025cbb60248fb3cec01bb6042d6acee309fa4")
+
+        gk = os.environ['GK']
+
+        g = Github(gk)
+
+         
         arr_git_users = []
         
         iterator = 0
