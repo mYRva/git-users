@@ -13,5 +13,6 @@ I created an access point (run.py) just to separte the command to start the appl
 
 For practicality and security reasonsI store the personal token from github in a env variable on the my Heroku dashboard.
 
+# Mobile View 
 
-
+![image](https://user-images.githubusercontent.com/5473501/113395863-c581fb80-9357-11eb-83a8-6b593bb04f68.png)
