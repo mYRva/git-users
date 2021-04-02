@@ -14,9 +14,7 @@ class Seed:
 
         gk = os.environ['GK']
 
-        g = Github(gk)
-
-         
+        g = Github(gk)         
         arr_git_users = []
         
         iterator = 0
