@@ -3,6 +3,7 @@ from flask import render_template, url_for, flash, redirect, request, abort
 from flaskr import app, db
 from flaskr.models import users
 from flaskr.seed import Seed
+import random
 
 @app.before_first_request
 def create_tables():
@@ -22,8 +23,8 @@ def create_tables():
 def git():       
     
     headings = ['id','login','avatar', 'type', 'profile']
-
-    page = request.args.get('page', 1, type=int)
+    num1 = random.randint(1, 150)
+    page = request.args.get('page', num1, type=int)
     user = users.query.paginate(page=page, per_page=25)
     
 
