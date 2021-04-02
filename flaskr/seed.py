@@ -12,7 +12,7 @@ class Seed:
 
     def get_git_users(self, total):
 
-        gk = "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"#os.environ['GK']
+        gk = os.environ['GK']
 
         g = Github(gk)         
         arr_git_users = []
